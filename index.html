@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name: years of experience, selected projects, and how to get in touch." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a href="#top" class="logo">YN<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">// hello, world</p>
+      <h1>I'm <em>Your Name</em>,<br />a developer who builds things that work.</h1>
+      <p class="lede">Short one-line pitch about what you do, who you do it for, and what makes your work different.</p>
+      <div class="cta">
+        <a href="#projects" class="btn primary">See my work</a>
+        <a href="#contact" class="btn">Get in touch</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2><span>01</span> About</h2>
+      <div class="about">
+        <p>Write a few sentences about yourself: how you got started, what you love working on, and what you're looking for next. Keep it personal and specific.</p>
+        <ul class="skills">
+          <li>JavaScript</li><li>HTML &amp; CSS</li><li>React</li><li>Node.js</li><li>Python</li><li>Git</li><li>UI Design</li><li>Databases</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2><span>02</span> Experience</h2>
+      <ol class="timeline">
+        <li>
+          <time>2024 — Present</time>
+          <h3>Job Title · Company</h3>
+          <p>What you're responsible for and one measurable win.</p>
+        </li>
+        <li>
+          <time>2022 — 2024</time>
+          <h3>Job Title · Company</h3>
+          <p>Key projects, technologies used, and impact.</p>
+        </li>
+        <li>
+          <time>2020 — 2022</time>
+          <h3>Job Title · Company</h3>
+          <p>Where you started and what you learned.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="projects" class="section">
+      <h2><span>03</span> Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <p class="tag">Web App</p>
+          <h3>Project One</h3>
+          <p>A short description of the problem and how you solved it.</p>
+          <p class="stack">React · Node · Postgres</p>
+          <a href="#" class="link">View project →</a>
+        </article>
+        <article class="card">
+          <p class="tag">Open Source</p>
+          <h3>Project Two</h3>
+          <p>A short description of the problem and how you solved it.</p>
+          <p class="stack">TypeScript · CLI</p>
+          <a href="#" class="link">View project →</a>
+        </article>
+        <article class="card">
+          <p class="tag">Design</p>
+          <h3>Project Three</h3>
+          <p>A short description of the problem and how you solved it.</p>
+          <p class="stack">Figma · CSS</p>
+          <a href="#" class="link">View project →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2><span>04</span> Contact</h2>
+      <p class="big">Have a project in mind? <a href="mailto:you@example.com">you@example.com</a></p>
+      <div class="socials">
+        <a href="https://github.com/King-techglitch">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">X / Twitter</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Your Name. Built and hosted on Netlify.</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
