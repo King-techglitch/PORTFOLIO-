@@ -1,107 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name — Portfolio</title>
-  <meta name="description" content="Portfolio of Your Name: years of experience, selected projects, and how to get in touch." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="nav">
-    <a href="#top" class="logo">YN<span>.</span></a>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>King Techglitch | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of King Techglitch — front-end developer, digital designer, and problem solver building premium web experiences."
+    />
+    <meta property="og:title" content="King Techglitch | Portfolio" />
+    <meta property="og:description" content="Front-end developer and digital designer creating polished, responsive web experiences." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a href="#top" class="logo" aria-label="Go to homepage">K<span>.</span></a>
 
-  <main id="top">
-    <section class="hero">
-      <p class="eyebrow">// hello, world</p>
-      <h1>I'm <em>Your Name</em>,<br />a developer who builds things that work.</h1>
-      <p class="lede">Short one-line pitch about what you do, who you do it for, and what makes your work different.</p>
-      <div class="cta">
-        <a href="#projects" class="btn primary">See my work</a>
-        <a href="#contact" class="btn">Get in touch</a>
-      </div>
-    </section>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-    <section id="about" class="section">
-      <h2><span>01</span> About</h2>
-      <div class="about">
-        <p>Write a few sentences about yourself: how you got started, what you love working on, and what you're looking for next. Keep it personal and specific.</p>
-        <ul class="skills">
-          <li>JavaScript</li><li>HTML &amp; CSS</li><li>React</li><li>Node.js</li><li>Python</li><li>Git</li><li>UI Design</li><li>Databases</li>
-        </ul>
-      </div>
-    </section>
+      <nav class="nav-menu" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-    <section id="experience" class="section">
-      <h2><span>02</span> Experience</h2>
-      <ol class="timeline">
-        <li>
-          <time>2024 — Present</time>
-          <h3>Job Title · Company</h3>
-          <p>What you're responsible for and one measurable win.</p>
-        </li>
-        <li>
-          <time>2022 — 2024</time>
-          <h3>Job Title · Company</h3>
-          <p>Key projects, technologies used, and impact.</p>
-        </li>
-        <li>
-          <time>2020 — 2022</time>
-          <h3>Job Title · Company</h3>
-          <p>Where you started and what you learned.</p>
-        </li>
-      </ol>
-    </section>
+      <button class="theme-toggle" type="button" aria-label="Toggle color theme">🌙</button>
+    </header>
 
-    <section id="projects" class="section">
-      <h2><span>03</span> Projects</h2>
-      <div class="grid">
-        <article class="card">
-          <p class="tag">Web App</p>
-          <h3>Project One</h3>
-          <p>A short description of the problem and how you solved it.</p>
-          <p class="stack">React · Node · Postgres</p>
-          <a href="#" class="link">View project →</a>
-        </article>
-        <article class="card">
-          <p class="tag">Open Source</p>
-          <h3>Project Two</h3>
-          <p>A short description of the problem and how you solved it.</p>
-          <p class="stack">TypeScript · CLI</p>
-          <a href="#" class="link">View project →</a>
-        </article>
-        <article class="card">
-          <p class="tag">Design</p>
-          <h3>Project Three</h3>
-          <p>A short description of the problem and how you solved it.</p>
-          <p class="stack">Figma · CSS</p>
-          <a href="#" class="link">View project →</a>
-        </article>
-      </div>
-    </section>
+    <main id="top">
+      <section class="hero reveal">
+        <div class="hero-copy">
+          <p class="eyebrow">// hello, world</p>
+          <h1>
+            I’m <em>King Techglitch</em>, a developer who turns bold ideas into clean,
+            high-performing digital experiences.
+          </h1>
+          <p class="lede">
+            I design and build responsive websites and interfaces that are sharp, accessible,
+            and built to help brands stand out online.
+          </p>
 
-    <section id="contact" class="section contact">
-      <h2><span>04</span> Contact</h2>
-      <p class="big">Have a project in mind? <a href="mailto:you@example.com">you@example.com</a></p>
-      <div class="socials">
-        <a href="https://github.com/King-techglitch">GitHub</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">X / Twitter</a>
-      </div>
-    </section>
-  </main>
+          <div class="cta">
+            <a href="#projects" class="btn primary">View projects</a>
+            <a href="#contact" class="btn secondary">Let’s talk</a>
+          </div>
 
-  <footer>© <span id="year"></span> Your Name. Built and hosted on Netlify.</footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
+          <ul class="stats" aria-label="Quick stats">
+            <li><strong>3+</strong><span>Years experience</span></li>
+            <li><strong>20+</strong><span>Projects shipped</span></li>
+            <li><strong>100%</strong><span>Responsive builds</span></li>
+          </ul>
+        </div>
+
+        <aside class="hero-card" aria-label="Availability information">
+          <p class="card-kicker">Currently available</p>
+          <h2>Freelance & product design support</h2>
+          <ul class="mini-list">
+            <li>UI/UX design</li>
+            <li>Landing pages</li>
+            <li>Frontend development</li>
+            <li>Portfolio optimization</li>
+          </ul>
+          <div class="chip-row">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+            <span>React</span>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about" class="section reveal">
+        <div class="section-heading">
+          <p class="kicker">01 / About</p>
+          <h2>Building clean experiences that work beautifully.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              I’m a front-end developer with a strong eye for design and a love for solving
+              real user problems through thoughtful interfaces. My work combines clean code,
+              polished typography, and conversion-focused thinking.
+            </p>
+            <p>
+              From landing pages to portfolio redesigns, I focus on creating digital products
+              that feel premium, easy to use, and aligned with the goals of the people behind them.
+            </p>
+          </div>
+
+          <div class="skills-panel">
+            <h3>Core skills</h3>
+            <ul class="skills" aria-label="Technical skills">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Responsive Design</li>
+              <li>Accessibility</li>
+              <li>Git</li>
+              <li>Figma</li>
+              <li>UI/UX</li>
+              <li>Performance</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section reveal">
+        <div class="section-heading">
+          <p class="kicker">02 / Experience</p>
+          <h2>Experience that blends design and development.</h2>
+        </div>
+
+        <ol class="timeline" aria-label="Professional experience timeline">
+          <li>
+            <time>2024 — Present</time>
+            <h3>Freelance Front-End Developer</h3>
+            <p>
+              Designing and building sleek landing pages, branded portfolio experiences, and
+              responsive web interfaces for clients and personal projects.
+            </p>
+          </li>
+          <li>
+            <time>2022 — 2024</time>
+            <h3>UI Designer & Developer</h3>
+            <p>
+              Collaborated on interface design systems, improved UX flows, and developed clean
+              front-end solutions for marketing and product initiatives.
+            </p>
+          </li>
+          <li>
+            <time>2020 — 2022</time>
+            <h3>Web Designer</h3>
+            <p>
+              Built visual-first websites, refined digital branding, and created user-friendly
+              experiences focused on clarity, accessibility, and engagement.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <div class="section-heading">
+          <p class="kicker">03 / Selected work</p>
+          <h2>Featured projects.</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-image image-one" aria-hidden="true"></div>
+            <div class="project-content">
+              <span class="tag">Brand website</span>
+              <h3>Northstar Studio</h3>
+              <p>
+                A premium agency landing page focused on clarity, trust, and strong visual storytelling.
+              </p>
+              <ul class="project-meta">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" aria-label="View Northstar Studio live demo">Live demo</a>
+                <a href="#" aria-label="View Northstar Studio source code">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image image-two" aria-hidden="true"></div>
+            <div class="project-content">
+              <span class="tag">Product UI</span>
+              <h3>PulseBoard</h3>
+              <p>
+                Dashboard concept for project tracking, KPI visibility, and performance monitoring.
+              </p>
+              <ul class="project-meta">
+                <li>React</li>
+                <li>UI/UX</li>
+                <li>Design System</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" aria-label="View PulseBoard live demo">Live demo</a>
+                <a href="#" aria-label="View PulseBoard source code">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image image-three" aria-hidden="true"></div>
+            <div class="project-content">
+              <span class="tag">Portfolio</span>
+              <h3>Creator Portfolio</h3>
+              <p>
+                A personal brand experience designed to showcase work, values, and expertise in a modern way.
+              </p>
+              <ul class="project-meta">
+                <li>Responsive</li>
+                <li>Figma</li>
+                <li>Front-end</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" aria-label="View Creator Portfolio live demo">Live demo</a>
+                <a href="#" aria-label="View Creator Portfolio source code">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section reveal">
+        <div class="section-heading">
+          <p class="kicker">04 / Contact</p>
+          <h2>Let’s build something sharp.</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-panel">
+            <p class="contact-headline">
+              Have a project in mind? Let’s turn your next idea into a website that feels polished,
+              useful, and memorable.
+            </p>
+
+            <div class="contact-links" aria-label="Contact information">
+              <a href="mailto:hello@kingtechglitch.dev">hello@kingtechglitch.dev</a>
+              <a href="https://github.com/King-techglitch" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://wa.me/1234567890" target="_blank" rel="noreferrer">WhatsApp</a>
+            </div>
+          </div>
+
+          <form class="contact-form" novalidate>
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+            </label>
+
+            <button type="submit" class="btn primary">Send message</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> King Techglitch. Crafted with care.
+    </footer>
+
+    <button class="scroll-top" type="button" aria-label="Scroll to top">↑</button>
+
+    <script>
+      const body = document.body;
+      const yearEl = document.getElementById('year');
+      const themeToggle = document.querySelector('.theme-toggle');
+      const navToggle = document.querySelector('.nav-toggle');
+      const navMenu = document.querySelector('.nav-menu');
+      const scrollTopBtn = document.querySelector('.scroll-top');
+      const revealItems = document.querySelectorAll('.reveal');
+      const form = document.querySelector('.contact-form');
+
+      yearEl.textContent = new Date().getFullYear();
+
+      const applyTheme = (theme) => {
+        const isLight = theme === 'light';
+        body.classList.toggle('light', isLight);
+        themeToggle.textContent = isLight ? '☀️' : '🌙';
+        localStorage.setItem('theme', isLight ? 'light' : 'dark');
+      };
+
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        applyTheme(savedTheme);
+      } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        applyTheme('light');
+      }
+
+      themeToggle.addEventListener('click', () => {
+        applyTheme(body.classList.contains('light') ? 'dark' : 'light');
+      });
+
+      navToggle.addEventListener('click', () => {
+        const isOpen = navMenu.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      navMenu.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+
+      revealItems.forEach((item) => observer.observe(item));
+
+      const handleScroll = () => {
+        body.classList.toggle('show-scroll-top', window.scrollY > 400);
+      };
+
+      window.addEventListener('scroll', handleScroll);
+      handleScroll();
+
+      scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const formData = new FormData(form);
+        const name = (formData.get('name') || '').toString().trim();
+        const email = (formData.get('email') || '').toString().trim();
+        const message = (formData.get('message') || '').toString().trim();
+        const status = form.querySelector('.form-status');
+
+        if (!name || !email || !message) {
+          status.textContent = 'Please complete all fields before sending your message.';
+          status.style.color = '#ff8a8a';
+          return;
+        }
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+          status.textContent = 'Please enter a valid email address.';
+          status.style.color = '#ff8a8a';
+          return;
+        }
+
+        status.textContent = 'Thanks! Your message is ready to send.';
+        status.style.color = '#7ef0c8';
+        form.reset();
+      });
+    </script>
+  </body>
 </html>
